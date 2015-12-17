@@ -116,15 +116,16 @@
 						</div>
 					</div>
 				</div>
-				<div class="panel panel-default">
+
+				<div class="panel panel-default table-responsive">
 					<div class="panel-heading">Neighbours</div>
 					<div class="panel-body">
 						<div ng-show="data.neighbour" class="row">
 							<div ng-repeat="value in data.neighbour">
-								<div class="col-xs-3">
+								<div class="col-lg-3  col-xs-6">
 									<strong>{{value.IP}}</strong>
 								</div>
-								<div class="col-xs-9">
+								<div class="col-lg-8 col-xs-6">
 									{{value.Host}}
 								</div>
 								<br>

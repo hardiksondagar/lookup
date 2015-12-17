@@ -9,6 +9,7 @@ body {
 .footer {
   padding-right: 15px;
   padding-left: 15px;
+  margin-bottom: 30px;
 }
 
 /* Custom page header */
@@ -49,7 +50,7 @@ body {
   }
   /* Space out the masthead */
   .header {
-    margin-bottom: 30px;
+    
   }
 }
 
