@@ -4,8 +4,9 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="author" content="Hardik Sondagar">
+	<meta name="description" content="Determines your IP address and shows information (host, location, whois, open ports) about any IP address entered. Look up to 10 neighbour ip address and hostname." />
+	<meta name="keywords"	content="my ip address,ip address,ip addresses,ip,ip v4,ip v6,ipv4,ipv6,dynamic ip address,static ip address,dns,host,hostname,location,dhcp,whois,domain information,domain owner,firewall" />
 	<link rel="icon" href="favicon.png">
 	<title>Lookup</title>
 	<!-- Bootstrap core CSS -->
