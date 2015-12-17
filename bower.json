@@ -1,0 +1,13 @@
+{
+  "name": "lookup",
+  "description": "Determines your IP address and shows information (host, location, whois, open ports) about any IP address entered. Look up to 10 neighbour ip address and hostname.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/hardiksondagar/lookup",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "latest",
+    "angular-sanitize": "latest",
+    "bootstrap": "latest",
+    "font-awesome": "latest"
+  }
+}
