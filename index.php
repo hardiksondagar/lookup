@@ -36,7 +36,7 @@
 				&nbsp;<button type="submit" class="btn btn-default btn-lg" id="lookupSubmit">Lookup</button>
 			</form>
 			
-			<div class="result" ng-show="message.lookup">
+			<div class="result" ng-show="message.lookup" ng-cloak>
 				<hr>
 				<div class="panel panel-default">
 					<div class="panel-heading">Address Info</div>
