@@ -9,7 +9,7 @@ $host=$_POST['query'];
 $ports = array(25, 80, 81, 110, 443, 3306);
 foreach ($ports as $port)
 {
-	$connection = fsockopen($host, $port, $errno, $errstr, 0.2);
+	$connection = fsockopen($host, $port, $errno, $errstr,1);
 	if (is_resource($connection))
 	{
 		$output[$port]=array('is_open'=>true,'name'=> getservbyport($port, 'tcp'));
