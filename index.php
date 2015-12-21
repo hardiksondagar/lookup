@@ -84,7 +84,7 @@
 					</div>
 				</div>
 				<div class="panel panel-default" id="result-port">
-					<div class="panel-heading">Open Ports</div>
+					<div class="panel-heading">Port Check</div>
 					<div class="panel-body">
 						<div ng-bind-html="message.portcheck"></div>
 						<div ng-if="data.portcheck">
