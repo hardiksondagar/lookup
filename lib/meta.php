@@ -60,6 +60,7 @@ $xpath = new DOMXpath($doc);
 $nodes = $xpath->query('//a');
 
 foreach($nodes as $node) {
+	// print_r($node->getAttribute('href'));
 	if(preg_match($fbUrlCheck, $node->getAttribute('href')) == 1)
 	{
 		$output['Facebook']=$node->getAttribute('href');

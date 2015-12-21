@@ -6,10 +6,10 @@ if(!isset($_POST['query']))
 	return json_encode($output);
 }
 $host=$_POST['query'];
-$ports = array(25, 80, 81, 110, 443, 3306);
+$ports = array(21,22,23,25,53,80,110,111,139,135,143,8080,443,3306,1433,1337);
 foreach ($ports as $port)
 {
-	$connection = fsockopen($host, $port, $errno, $errstr, 0.2);
+	$connection = fsockopen($host, $port, $errno, $errstr, 0.7);
 	if (is_resource($connection))
 	{
 		$output[$port]=array('is_open'=>true,'name'=> getservbyport($port, 'tcp'));

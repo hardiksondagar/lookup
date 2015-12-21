@@ -88,14 +88,48 @@
 					<div class="panel-body">
 						<div ng-bind-html="message.portcheck"></div>
 						<div ng-if="data.portcheck">
-							<p ng-repeat="(key, port) in data.portcheck">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th>#</th>
+										<th>Port</th>
+										<th>Name</th>
+										<th>Status</th>
+									</tr>
+								</thead> 
+								<tbody> 
+									<tr ng-repeat="(key, port) in data.portcheck">
+										<td>
+											<span ng-show="port.is_open"  class="fa-stack fa-lg text-success">
+												<i class="fa fa-circle fa-stack-2x"></i>
+												<i class="fa fa-check fa-stack-1x fa-inverse"></i>
+											</span>
+											<span ng-hide="port.is_open" class="fa-stack fa-lg text-danger">
+												<i class="fa fa-circle fa-stack-2x"></i>
+												<i class="fa fa-times fa-stack-1x fa-inverse"></i>
+											</span>
+										</td>
+										<td>
+											{{key}}
+										</td>
+										<td>
+											{{port.name}}
+										</td>
+										<td>
+											{{port.is_open?'Open':'Filtered'}}
+										</td>
+										
+									</tr> 
+								</tbody>
+							</table>
+							<!-- <p ng-repeat="(key, port) in data.portcheck">
 								<span ng-if="port.is_open" class="text-success">
 									Port number <strong>{{key}}</strong> ({{port.name}}) is open
 								</span>
 								<span ng-hide="port.is_open" class="text-danger">
 									Port number <strong>{{key}}</strong> ({{port.name}}) is close
 								</span>
-							</p>
+							</p> -->
 						</div>
 					</div>
 				</div>
